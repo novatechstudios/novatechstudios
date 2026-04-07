@@ -1,2 +1,187 @@
-<h1>Website under construction</h1>
-<p>Please check back later</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novatech</title>
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+    <div class="menubar">
+        <span class="logo">NOVATECH</span>
+        <nav>
+            <p>More sites coming soon!</p>
+            <a style="display: none;">Store</a>
+            <a style="display: none;">NovaOS</a>
+            <a style="display: none;">Products</a>
+            <a style="display: none;">Login</a>
+        </nav>
+    </div>
+    <div class="hero">
+        <h1>The future of devices</h1>
+        <p>Novatech brings you smart operating systems built with almost no bloat.</p>
+        <button>Check it out</button>
+    </div>
+    <div class="cards">
+        <div class="row">
+            <div class="card">
+                <h1>Privacy first</h1>
+                <p>NovaOS is our custom made operating system built from scratch, it has the greatest privacy features of any os!</p>
+            </div>
+            <div class="card">
+                <h1>Custom browsing</h1>
+                <p>NovaOS has a custom browser protocol. As many browsers use "https", NovaOS uses "nov" for verified sites.</p>
+            </div>
+            <div class="card">
+                <h1>Programming</h1>
+                <p>NovaOS has many programming apps as it is made for normal users, it is also built and ready for programming with python and javascript.</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        body {
+            background-color: #0b0e14;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            padding-top: 50px;
+            text-align: center;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            color: #abcdef;
+            position: absolute;
+            left: 25px;
+        }
+
+        .cards {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .card {
+            width: 300px;
+            height: 300px;
+            background-color: #1C212B;
+            border-radius: 10px;
+            padding: 15px;
+            transition: .3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 15px #abcdef;
+            transform: scale(0.98);
+        }
+
+        button {
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            background-color: #2299ff;
+            border: none;
+            color: white;
+            font-family: inherit;
+            border-radius: 125px;
+            cursor: pointer;
+            backdrop-filter: blur(15px);
+            position: relative;
+            overflow: hidden;
+            z-index: 15;
+            font-size: 15px;
+        }
+
+
+        button::before {
+            transition: width 0.3s ease;
+            width: 0;
+            height: 100%;
+            background-color: #0077d6;
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: inherit;
+            z-index: -1;
+        }
+
+        button:hover::before {
+            width: 100%;
+        }
+        button:active::before {
+            filter: brightness(0.9);
+        }
+
+        * {
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+        }
+
+        .hero {
+            width: 100vw;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: url("hero.png") no-repeat center;
+            background-size: cover;
+            text-shadow: 0 0 10px white, 0 0 15px black;
+        }
+
+        .menubar {
+            width: 100vw;
+            height: 50px;
+            border-bottom: 1px solid #1C212B;
+            top: 0;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(15px);
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 150;
+        }
+
+        a {
+            cursor: pointer;
+            transition: .3s ease;
+            color: white;
+        }
+
+        a:hover {
+            color: #abcdef;
+        }
+
+        nav {
+            position: absolute;
+            right: 25px;
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+</body>
+</html>
